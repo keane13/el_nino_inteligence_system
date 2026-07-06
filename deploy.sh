@@ -6,9 +6,12 @@
 
 # Set your variables
 PROJECT_ID="smooth-reason-491707-f6"
-REGION="asia-southeast2" # Jakarta
-BACKEND_SERVICE_NAME="jakarta-pulse-backend"
-FRONTEND_SERVICE_NAME="jakarta-pulse-frontend"
+REGION="us-central1"
+BACKEND_SERVICE_NAME="elnino-sistem-backend"
+FRONTEND_SERVICE_NAME="elnino-sistem-frontend"
+
+# Masukkan API Key Gemini Anda di bawah ini:
+GEMINI_API_KEY="PASTE_KODE_API_GEMINI_ANDA_DISINI"
 
 echo "Deploying Backend to Cloud Run..."
 cd backend
@@ -18,7 +21,7 @@ gcloud run deploy $BACKEND_SERVICE_NAME \
   --region $REGION \
   --allow-unauthenticated \
   --port 8080 \
-  --set-env-vars="ENV=production"
+  --set-env-vars="ENV=production,GEMINI_API_KEY=$GEMINI_API_KEY"
 
 # Capture the backend URL automatically
 BACKEND_URL=$(gcloud run services describe $BACKEND_SERVICE_NAME --platform managed --region $REGION --format 'value(status.url)' --project $PROJECT_ID)
@@ -32,7 +35,7 @@ gcloud run deploy $FRONTEND_SERVICE_NAME \
   --region $REGION \
   --allow-unauthenticated \
   --port 3000 \
-  --set-env-vars="BACKEND_URL=$BACKEND_URL"
+  --set-env-vars="BACKEND_URL=$BACKEND_URL,GEMINI_API_KEY=$GEMINI_API_KEY"
 
 echo "✅ Deployment Complete!"
 echo "Frontend is live. It is connected to $BACKEND_URL."
