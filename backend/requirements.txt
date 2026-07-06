@@ -1,0 +1,16 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pandas==2.2.2
+numpy==1.26.4
+anthropic==0.28.0
+python-dotenv==1.0.1
+google-adk
+pytest
+pytest-asyncio
+httpx
+redis
+langsmith
+guardrails-ai
+deepeval
+google-cloud-bigquery
+google-cloud-storage
