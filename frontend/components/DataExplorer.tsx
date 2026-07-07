@@ -77,7 +77,14 @@ const TABLES: TableDef[] = [
     columns: [
       { name: "provinsi", type: "STRING" },
       { name: "tahun", type: "NUMBER" },
-      { name: "bulan", type: "STRING" }
+      { name: "bulan", type: "STRING" },
+      { name: "kondisi_air_tanah.kedalaman_rata_rata_meter", type: "NUMBER" },
+      { name: "kondisi_air_tanah.status", type: "STRING" },
+      { name: "pdam.total_produksi_liter_per_detik", type: "NUMBER" },
+      { name: "pdam.kontinuitas_aliran_jam_per_hari", type: "NUMBER" },
+      { name: "bendungan.volume_tampungan_juta_m3", type: "NUMBER" },
+      { name: "bendungan.persentase_kapasitas", type: "NUMBER" },
+      { name: "bendungan.status_operasi", type: "STRING" }
     ]
   }
 ];

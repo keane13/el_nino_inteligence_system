@@ -105,7 +105,7 @@ def search_data_agent(client: genai.Client, query: str, context: str, image_data
         "4. `smooth-reason-491707-f6.el_nino.medical_history_2025_2026_rekap`\n"
         "   Schema: provinsi (STRING), tahun (INTEGER), bulan (STRING), jumlah_kasus_ispa (INTEGER), jumlah_kasus_diare (INTEGER).\n"
         "5. `smooth-reason-491707-f6.el_nino.water_supply_2025_2026` (Water Supply)\n"
-        "   Schema: provinsi (STRING), tahun (INTEGER), bulan (STRING), kondisi_air_tanah (RECORD), pdam (RECORD), bendungan (RECORD).\n\n"
+        "   Schema: provinsi (STRING), tahun (INTEGER), bulan (STRING), kondisi_air_tanah.kedalaman_rata_rata_meter (FLOAT), kondisi_air_tanah.status (STRING), pdam.total_produksi_liter_per_detik (FLOAT), pdam.kontinuitas_aliran_jam_per_hari (INTEGER), bendungan.volume_tampungan_juta_m3 (FLOAT), bendungan.persentase_kapasitas (FLOAT), bendungan.status_operasi (STRING).\n\n"
         "Use SQL aggregation operations like MAX, MIN, AVG, SUM, and COUNT if asked for statistics. ONLY use the tables above. Ensure column and table names 100% match the schema.\n"
         "Only use SELECT statements.\n"
         "Output: structured factual data and clearly mention the data source (which GCS document, or BigQuery), without deep analysis.\n\n"
