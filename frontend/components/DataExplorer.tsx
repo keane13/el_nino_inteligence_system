@@ -72,15 +72,12 @@ const TABLES: TableDef[] = [
     ]
   },
   {
-    id: "smooth-reason-491707-f6.el_nino.ketersediaan_air_2018_2026",
-    name: "ketersediaan_air_2018_2026",
+    id: "smooth-reason-491707-f6.el_nino.water_supply_2025_2026",
+    name: "water_supply_2025_2026",
     columns: [
       { name: "provinsi", type: "STRING" },
       { name: "tahun", type: "NUMBER" },
-      { name: "bulan", type: "STRING" },
-      { name: "total_produksi_liter_per_detik", type: "NUMBER" },
-      { name: "persentase_kapasitas", type: "NUMBER" },
-      { name: "volume_tampungan_juta_m3", type: "NUMBER" }
+      { name: "bulan", type: "STRING" }
     ]
   }
 ];

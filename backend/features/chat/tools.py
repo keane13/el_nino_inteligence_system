@@ -40,7 +40,7 @@ def query_bigquery(sql_query: str) -> str:
     - smooth-reason-491707-f6.el_nino.food_availability_rekap_2025_2026
     - smooth-reason-491707-f6.el_nino.weather_air_quality_2025_2026
     - smooth-reason-491707-f6.el_nino.medical_history_2025_2026_rekap
-    - smooth-reason-491707-f6.el_nino.ketersediaan_air_2018_2026
+    - smooth-reason-491707-f6.el_nino.water_supply_2025_2026
     Do NOT use DML (INSERT/UPDATE/DELETE). Only SELECT queries are allowed.
     """
     try:
