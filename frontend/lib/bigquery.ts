@@ -4,11 +4,13 @@ let bqClient: BigQuery | null = null;
 
 export function getBigQueryClient() {
   if (!bqClient) {
-    const keyPath = 'C:/Users/keane/Desktop/Portofolio/Top 5/jakarta-pulse-v2/jakarta-pulse-v2/backend/data/smooth-reason-491707-f6-df06120b499a.json';
-    bqClient = new BigQuery({
+    const options: any = {
       projectId: 'smooth-reason-491707-f6',
-      keyFilename: keyPath,
-    });
+    };
+    if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
+      options.keyFilename = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+    }
+    bqClient = new BigQuery(options);
   }
   return bqClient;
 }

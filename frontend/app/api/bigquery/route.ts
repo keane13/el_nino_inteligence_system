@@ -1,10 +1,13 @@
 import { NextResponse } from 'next/server';
 import { BigQuery } from '@google-cloud/bigquery';
 
-const bq = new BigQuery({
+const options: any = {
   projectId: 'smooth-reason-491707-f6',
-  keyFilename: 'C:/Users/keane/Desktop/Portofolio/Top 5/jakarta-pulse-v2/jakarta-pulse-v2/backend/data/bquery_key/smooth-reason-491707-f6-df06120b499a.json'
-});
+};
+if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
+  options.keyFilename = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+}
+const bq = new BigQuery(options);
 
 export async function POST(req: Request) {
   try {
