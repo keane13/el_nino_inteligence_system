@@ -3,6 +3,13 @@
 > **Google Cloud + Gemini AI Hackathon 2026**  
 > **Platform:** AI-powered crisis intelligence & real-time monitoring system for El Niño disasters in Indonesia.
 
+
+
+
+https://github.com/user-attachments/assets/a503366e-32c6-4948-add1-b5d47387f3cb
+
+
+
 ## 🎯 Overview
 **El Niño Crisis Intelligence** is a smart analytics and decision-support platform designed to mitigate the severe 2026 El Niño crisis in Indonesia. By unifying fragmented data across government agencies into a single hub, it empowers decision-makers and emergency responders with real-time insights, natural language querying (NLQ), and automated threat alerts.
 
