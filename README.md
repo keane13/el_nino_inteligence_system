@@ -96,10 +96,10 @@ jakarta-pulse-v2/
 ```
 
 ## 🏗️ Tech Stack
-* **AI & Data:** Google Gemini API (`gemini-flash-lite-latest`), Google BigQuery, Google Cloud Storage, LangSmith.
+* **AI & Data:** Google Gemini API (`gemini-flash-lite-latest`), Google ADK, Google BigQuery, Google Cloud Storage, LangSmith.
 * **Backend:** Python 3.13, FastAPI, Pandas, Redis, Guardrails-AI.
 * **Frontend:** Next.js 16, React 19, TailwindCSS v4, Leaflet.js, Recharts.
-* **Infrastructure:** Docker & Google Cloud Run.
+* **Infrastructure:** Docker, Google Cloud Run, Google Logging, Google Monitoring, Google Cloud Build.
 
 ---
 *Built for the Google Cloud Hackathon to demonstrate the power of AI in proactive disaster management.*
