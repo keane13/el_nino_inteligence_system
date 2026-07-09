@@ -10,22 +10,22 @@ https://github.com/user-attachments/assets/a503366e-32c6-4948-add1-b5d47387f3cb
 
 
 
-## 🎯 Overview
+##  Overview
 **El Niño Crisis Intelligence** is a smart analytics and decision-support platform designed to mitigate the severe 2026 El Niño crisis in Indonesia. By unifying fragmented data across government agencies into a single hub, it empowers decision-makers and emergency responders with real-time insights, natural language querying (NLQ), and automated threat alerts.
 
-## 🔥 The Problem & Our Solution
+## The Problem & Our Solution
 * **The Threat:** Severe drought, widespread wildfires, hazardous air quality (PM2.5), and water scarcity affecting millions.
 * **The Bottleneck:** Fragmented data across disparate government agencies and slow, manual data analysis.
 * **The Solution:** A unified API integrating **Google BigQuery** and **Google Cloud Storage (GCS)**, powered by a **Multi-Agent Gemini AI** system. The AI reads contextual policy documents, queries massive datasets via NLQ, and instantly generates actionable visualizations.
 
-## ✨ Key Features
+## Key Features
 - **🤖 Multi-Agent AI Assistant:** Hierarchical Gemini architecture answering queries, generating charts, and citing BigQuery/GCS sources.
 - **🗺️ Real-Time Intelligence Map:** Geospatial monitoring of wildfire hotspots, drought indices, reservoir levels, and citizen complaints.
 - **🔮 Predictive Analytics:** Forecasting engine for anticipating threats and analyzing 7-day hazard trends.
 - **🚨 Smart Alert & Dispatch:** Automated webhook integrations for real-time Telegram dispatch to field officers.
 - **🔒 Enterprise-Grade Guardrails:** Built-in LLM safety systems to block toxicity, prompt injections, and PII leaks.
 
-## 🔄 Multi-Agent Workflow
+## Multi-Agent Workflow
 Our AI system utilizes a strict orchestration pattern (Google ADK inspired) to route user queries efficiently and safely:
 
 ```text
