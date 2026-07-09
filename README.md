@@ -1,6 +1,6 @@
 # 🌏 El Niño Crisis Intelligence
 
-> **Google Cloud + Gemini AI Hackathon 2026**  
+> **Gen AI Acaademy APAC Edition Hackathon 2026**  
 > **Platform:** AI-powered crisis intelligence & real-time monitoring system for El Niño disasters in Indonesia.
 
 
